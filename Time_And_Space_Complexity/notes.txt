@@ -25,10 +25,47 @@
         3. Avoid lower bound
 
     There are there cases for time complexity.
-        1. Best case  Ω()
+        1. Best case or lower bound  Ω()
         2. Average Case θ()
-        3. Worst Case O()
+        3. Worst Case or Upper bound O()
         
+    example
+
+    for i in range(1, n+1):
+        for j in range(1, i+1):
+        pass
+
+    in the above code let us see for how many times it runs.
+
+    for i = 1, j will run for 1 time
+    for i = 2, j will run for 2 times
+    for i = 3, j will run for 3 times
+    and so on 
+
+    we can say for i = n, j will run for n times.
+
+    in total the code inside will run for 1 + 2 + 3 + 4 + .... N times
+
+    which means total n(n+1)/2 times
+    simplifying this we get n2 as biggest term so the time complexity would be O(n^2)
+
+
+# What is space complexity
+
+    Similar to time complexity space complexity is measured with O()
+
+    Total space = Auxilary Space + Input Space.
+
+    Auxilary Space => th extra space used to solve the problem the problem
+    Input space : The space used to sotre the input.
+
+    x = 5, y = 10, z = 15
+
+    for space optimization
+    x = x + y + z (never do this in interview as this is not a good practise).
+
+
+
 
 
 

@@ -1,0 +1,42 @@
+# What is time complexity
+
+    wrong definition: It is time taken to run the code.
+
+    correct definition: Rate of increase in time w.r.t to input in size.
+
+    Time complexity = Big oh Notation => O()
+
+    for i in range(1, 6):
+        print("Raghav");
+
+
+    initialize i
+    check condiition
+    print i
+    check condition again
+    print i
+
+    like this it goes for n iterations that why its time complexity is O(n)
+
+
+    Note: 
+        1. Always Calculate time complexity in worst case.
+        2. Avoid the constant values
+        3. Avoid lower bound
+
+    There are there cases for time complexity.
+        1. Best case  Ω()
+        2. Average Case θ()
+        3. Worst Case O()
+        
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,6 @@ def check_palindrome(n):
     num = n
     reversed_number = 0;
     
-
     while(num>0):
         digit = num%10;
         num = num // 10;

@@ -65,9 +65,49 @@
     x = x + y + z (never do this in interview as this is not a good practise).
 
 
+    example
+
+    input array array[n] => O(n)
 
 
+# Time complexity for common python list methods
 
+    method->time complexity O()
+    copy->O(n)
+    append->O(1)
+    pop last->O(1)
+    pop intermidiate->O(n)
+    insert->O(n)
+    get item->O(1)
+    set item->O(1)
+    delete item->O(n)
+    iteration->O(n)
+    get slice->O(k) where k is the length of slice
+    del slice->O(n)
+    set slice->O(k+n)
+    sort->O(n log(n))
+    multiply->O(nk)
+    min(s), max(s) -> O(n)
+    len(list)->O(1)
+    x in s-> O(n)
+
+    note:
+        In a set x in s operation has average case O(1) and worst case O(n)
+
+        myset = {5, 3, 2, 1, 10, 11, 15}
+
+        15 in myset
+
+
+# Time complexity for common python dictionary methods
+
+    method->time complexity
+    k in d-> O(1), amortised worst case is O(n)
+    copy(3)->O(n)
+    get item->O(1), amortised worst case is O(n)
+    set item->O(1), amortised worst case is O(n)
+    delete item->O(1), amortised worst case is O(n)
+    iteration->O(n)
 
 
 

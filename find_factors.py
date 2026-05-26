@@ -48,15 +48,43 @@ def print_factors(num):
     for i in range(1, n//2 + 1):
         if num%i == 0:
             result.append(i)
-
     result.append(num);
     return result;
-
-
 start_time = time.time();
 
 
-
-
-print(print_factors(23798323));
+print(print_factors(100000));
 print((time.time() - start_time)*1000);
+
+
+
+
+
+'''
+
+Now there is even more optimised approach:
+
+lets say that number is 36. If 36 is divisible by 2 then we get 36/2 = 18 this means 36 is also divisible by 18. we got 2 factor by doing just one operation.
+
+
+let try to code this optimised approach and note the time duration to execute this.
+
+'''
+import math;
+
+
+def optimised_prime_factors(num):
+    factors = [];
+    limit = math.sqrt(num) // 1;
+    for i in range(1, int(limit) + 1):
+        if(num%i == 0):
+            factors.append(i);
+            if(i != num/i):
+                factors.append(num/i);
+    print(factors);
+    return factors;
+
+
+start_time = time.time();
+optimised_prime_factors(100000);
+print('Time taken: ', (time.time() - start_time)*1000);

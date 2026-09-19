@@ -1,0 +1,9 @@
+All Letcode problems
+
+2904. Shortest and Lexicographically Smallest Beautiful String
+https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/?envType=daily-question&envId=2026-08-26
+
+        
+836. Rectangle Overlap
+https://leetcode.com/problems/rectangle-overlap/submissions/2125804755/
+
